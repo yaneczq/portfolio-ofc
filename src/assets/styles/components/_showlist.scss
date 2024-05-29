@@ -1,0 +1,40 @@
+@import "./variables";
+
+
+
+
+
+.showlist-container {
+    padding: 0rem 0.75rem 0rem 0.75rem;
+    h1 {
+        font-size: map-get($typeScale, heading3 );
+        margin: 0;
+        margin-bottom: 0.5rem;
+    }
+    h3 {
+        margin: 0;
+        font-size: 1.25rem;
+        font-weight: 700; 
+    }
+    .show-type {
+        display: flex;
+        padding: 0rem 0.75rem 0rem 0.75rem;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #000;
+        height: 5.75rem;
+    
+        p {
+            margin: 0;
+        }
+
+    }
+}
+
+.show-type.one {
+    border-bottom: none
+}
+
+
+
+

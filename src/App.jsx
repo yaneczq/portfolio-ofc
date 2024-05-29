@@ -1,9 +1,11 @@
-const App = () => {
-  return (
-    <div>Hello siema
-      diora doasijd
-    </div>
-  )
-}
+import Home from './pages/Home';
 
-export default App
+const App = () => {
+    return (
+        <div>
+            <Home></Home>
+        </div>
+    );
+};
+
+export default App;

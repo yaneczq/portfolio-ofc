@@ -1,0 +1,51 @@
+@import './assets/styles/components/artists';
+@import "./assets/styles/components/responsive";
+@import "./assets/styles/components/variables";
+@import "./assets/styles/components/marquee";
+@import "./assets/styles/components//footer";
+@import "./assets/styles/components/textbanner";
+@import "./assets/styles/components/showlist";
+@import "./assets/styles/components/weather";
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden; /* Prevent the whole page from scrolling */
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+    // @include responsive-padding(0px, 0x, 120px, 140px)
+    // background-color: red;
+}
+
+.left-section {
+    background: var(--cl-grey-1);
+    
+    position: fixed; /* Fixes this section in place */
+    overflow: hidden; /* Ensure it doesn't scroll */
+    // box-sizing: border-box;
+    width: 50%; /* Fixed width */
+    height: 100%;
+
+
+
+}
+
+.right-section {
+    position: relative;
+    background-color: var(--cl-white-1);
+    padding: 0;
+    float: right;
+    width: 50%;    
+    height: 100vh;
+    overflow-y: auto; /* Enables vertical scrolling */
+}
+
+
+
+
+
+

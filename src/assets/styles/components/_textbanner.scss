@@ -1,0 +1,44 @@
+@import "./variables";
+
+
+.slider-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 23rem;
+  .text-slider {
+    max-height: 20rem;
+    width: 50%;
+    margin: 0;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #slider-text {
+    width: 100%;
+    padding: 2rem;
+    margin: 0;
+    opacity: 0;
+    animation: fadeInOut 8s ease infinite;
+    font-size: map-get($typeScale, p-large);
+    // font-size: 2rem;
+  }
+  
+  @keyframes fadeInOut {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+}
+
+
+
+  
