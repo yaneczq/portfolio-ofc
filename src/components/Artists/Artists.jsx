@@ -8,22 +8,22 @@ const Artists = () => {
         <div className="grid-item">
           <div className="artist-thumbnail">&nbsp;</div>
           <h2>Artist Name</h2>
-          <p>Producer Type, Music Genre, Country & City </p>
+          <p>Producer Type, Music Genre,<br></br>  Country & City </p>
         </div>
         <div className="grid-item">
           <div className="artist-thumbnail">&nbsp;</div>
           <h2>Artist Name</h2>
-          <p>Producer Type, Music Genre, Country & City </p>
+          <p>Producer Type, Music Genre,<br></br>  Country & City </p>
         </div>
         <div className="grid-item">
           <div className="artist-thumbnail">&nbsp;</div>
           <h2>Artist Name</h2>
-          <p>Producer Type, Music Genre, Country & City </p>
+          <p>Producer Type, Music Genre,<br></br> Country & City </p>
         </div>
         <div className="grid-item">
           <div className="artist-thumbnail">&nbsp;</div>
           <h2>Artist Name</h2>
-          <p>Producer Type, Music Genre, Country & City </p>
+          <p>Producer Type, Music Genre,<br></br>  Country & City </p>
         </div>
       </div>
     </div>

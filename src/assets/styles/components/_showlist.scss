@@ -1,5 +1,5 @@
 @import "./variables";
-
+@import "./layout";
 
 
 
@@ -7,25 +7,95 @@
 .showlist-container {
     padding: 0rem 0.75rem 0rem 0.75rem;
     h1 {
-        font-size: map-get($typeScale, heading3 );
         margin: 0;
         margin-bottom: 0.5rem;
+        @include respond-to(sm) {
+            color: green;
+            font-size: map-get($typeScale, heading5 );
+        }
+        @include respond-to(md) {
+            
+            color: blue;
+        }
+        @include respond-to(lg) {
+            font-size: map-get($typeScale, heading4 );
+            color: yellow;
+        }
+        @include respond-to(xl) {
+            font-size: map-get($typeScale, heading3 );
+            color: red;
+        }
     }
     h3 {
         margin: 0;
         font-size: 1.25rem;
-        font-weight: 700; 
+        font-weight: 700;
+        @include respond-to(sm) {
+            color: green;
+            font-size: map-get($typeScale, captions );
+        }
+        @include respond-to(md) {
+            color: blue;
+            font-size: map-get($typeScale, mid-root );
+        }
+        @include respond-to(lg) {
+            font-size: map-get($typeScale, p-large );
+            color: yellow;
+        }
+        @include respond-to(xl) {
+            font-size: map-get($typeScale, p-large );
+            color: red;
+        } 
     }
     .show-type {
         display: flex;
-        padding: 0rem 0.75rem 0rem 0.75rem;
+        padding: 0rem 0.75rem 0rem 0rem;
         justify-content: space-between;
         align-items: center;
         border-bottom: 1px solid #000;
-        height: 5.75rem;
-    
+        height: 4.75rem;
+        @include respond-to(sm) {
+            color: green;
+
+            font-size: map-get($typeScale, extra-small );
+        }
+        @include respond-to(md) {
+            color: blue;
+            font-size: map-get($typeScale, extra-small );
+            
+        }
+        @include respond-to(lg) {
+            font-size: map-get($typeScale, captions );
+            color: yellow;
+        }
+        @include respond-to(xl) {
+            font-size: map-get($typeScale, captions );
+            color: red;
+        } 
         p {
             margin: 0;
+        }
+        a {
+            @include respond-to(sm) {
+            color: green;
+
+            }
+            @include respond-to(md) {
+                color: blue;
+                font-weight: 600;
+                font-size: map-get($typeScale, captions );
+                
+            }
+            @include respond-to(lg) {
+                font-size: map-get($typeScale, captions );
+                font-weight: 600;
+                color: yellow;
+            }
+            @include respond-to(xl) {
+                font-size: map-get($typeScale, mid-root );
+                font-weight: 600;
+                color: red;
+            } 
         }
 
     }

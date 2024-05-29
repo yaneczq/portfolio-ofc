@@ -1,34 +1,96 @@
 @import "./variables";
+@import "./layout";
 
 
 .post-wrapper {
     margin: 0;
     padding: 0;
     margin-bottom: 3.75rem;
+
+
     .post-container {
         margin-left: 0.75rem;
         margin-right: 0.75rem;
         margin-bottom: 1.75rem;
         .thumbnail {
             width: 100%;
-            height: 25rem;
+            height: 30rem;
             background-color: var(--cl-grey-0);
+            @include respond-to(sm) {
+                height: 10rem;
+            }
+            @include respond-to(lg) {
+                font-size: map-get($typeScale, heading6);
+                color: yellow;
+                height: 15rem;
+            }
+            @include respond-to(xl) {
+                height: 25rem;
+            }
         }
         color: var(--cl-white);
         h1 {
             font-size: map-get($typeScale, heading3);
             line-height: 111%;
             margin: 0;
+            margin-bottom: 0.75rem;
+            @include respond-to(sm) {
+                font-size: map-get($typeScale, heading5);
+                color: green;
+            }
+            @include respond-to(md) {
+                font-size: map-get($typeScale, heading4);
+                color: blue;
+            }
+            @include respond-to(lg) {
+                color: yellow;
+              }
+            @include respond-to(xl) {
+                font-size: map-get($typeScale, heading3);
+                color: red;
+            }
         }
         p {
             margin: 0;
             margin-top: 0.75rem;
-            font-size: map-get($typeScale, heading5 );
+            font-size: map-get($typeScale, heading4 );
+            
+            
+            @include respond-to(sm) {
+                font-size: map-get($typeScale, p-large);
+                color: green;
+            }
+            @include respond-to(md) {
+                font-size: map-get($typeScale, p-large);
+                color: blue;
+            }
+            @include respond-to(lg) {
+                font-size: map-get($typeScale, heading6);
+                color: yellow;
+            }
+            @include respond-to(xl) {
+                font-size: map-get($typeScale, heading5);
+                color: red;
+            }
+          
+              
         }
         .cta-btn {
             font-size: map-get($typeScale, heading5);
             margin-top: 0.5rem;
             display: flex;
+            @include respond-to(sm) {
+                font-size: map-get($typeScale, p-large);
+                font-weight: 600;
+                color: green;
+            }
+            @include respond-to(md) {
+                font-size: map-get($typeScale, heading6);
+                color: blue;
+            }
+            @include respond-to(lg) {
+                font-size: map-get($typeScale, heading6);
+            }
         }
     }
 }

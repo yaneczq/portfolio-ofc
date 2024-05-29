@@ -1,11 +1,14 @@
 @import './assets/styles/components/artists';
-@import "./assets/styles/components/responsive";
 @import "./assets/styles/components/variables";
 @import "./assets/styles/components/marquee";
 @import "./assets/styles/components//footer";
 @import "./assets/styles/components/textbanner";
 @import "./assets/styles/components/showlist";
 @import "./assets/styles/components/weather";
+@import "./assets/styles/components/breakpoints";
+@import "./assets/styles/components/layout";
+
+
 
 body, html {
     margin: 0;
@@ -14,6 +17,7 @@ body, html {
     width: 100%;
     overflow: hidden; /* Prevent the whole page from scrolling */
     font-family: "Inter", sans-serif;
+    
 }
 
 .container {
@@ -27,7 +31,7 @@ body, html {
     position: fixed; /* Fixes this section in place */
     overflow: hidden; /* Ensure it doesn't scroll */
     // box-sizing: border-box;
-    width: 50%; /* Fixed width */
+    width: 60%; /* Fixed width */
     height: 100%;
 
 
@@ -39,7 +43,7 @@ body, html {
     background-color: var(--cl-white-1);
     padding: 0;
     float: right;
-    width: 50%;    
+    width: 40%;    
     height: 100vh;
     overflow-y: auto; /* Enables vertical scrolling */
 }

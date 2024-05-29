@@ -25,7 +25,7 @@
     // Ratio: 1.414, "Augmented Fourth"
     $typeScale: (
 
-        marquee: 127.88px * 8 ,
+        marquee: 127.88px * 4.4,
 
         heading1: 127.88px,
         heading2: 90.44px,
@@ -33,10 +33,20 @@
         heading4: 45.23px,
         heading5: 31.99px,
         heading6: 22.62px,
-        p-large: 20px,
+        p-large: 18px,
         p-root: 16px,
+        mid-root: 12.5px,
         captions: 11.32px,
-        extra-small: 8px,
+
+        extra-small: 9px,
+
+
+
+
+        rwd-1: 10px,
+        rwd-2: 14px,
+        rwd-3: 18px,
+        rwd-4: 22px,
         
         def-line-height: 1.6px,
         def-font-weight: 500,
@@ -47,7 +57,8 @@
     align-items: center;
     flex-direction: $direction;
     background: $background;
-}    
+}   
+
 
     
 /* DEFAULT TYPOGRAPHY  */

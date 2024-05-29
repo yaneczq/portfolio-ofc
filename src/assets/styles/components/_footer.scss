@@ -5,10 +5,10 @@
     background-color: var(--cl-black-0);
     justify-content: space-between;
     align-items: center;
-    height: 8rem;
+    height: 5rem;
     .contact-info{
-      background-color: var(--cl-black-2);
-      color: var(--cl-white-0);
+        color: var(--cl-white-0);
+      font-size: map-get($typeScale, captions );
       margin-top: 0;
       margin-left: 1rem;  
         p {
@@ -31,9 +31,8 @@
     justify-content: center;
     text-align: center;
     text-transform: uppercase;
-    background-color: var(--cl-black-2);
     color: var(--cl-white-0);
-    height: 4rem;
-    width: 8rem;
+    height: 3rem;
+    width: 6rem;
     margin-right: 1rem;
 }

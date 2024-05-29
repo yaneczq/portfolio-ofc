@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 23rem;
+  height: 20rem;
   .text-slider {
     max-height: 20rem;
     width: 50%;
@@ -22,20 +22,20 @@
     margin: 0;
     opacity: 0;
     animation: fadeInOut 8s ease infinite;
-    font-size: map-get($typeScale, p-large);
+    font-size: map-get($typeScale, heading6);
     // font-size: 2rem;
   }
   
   @keyframes fadeInOut {
-      0% {
-        opacity: 0;
-      }
-      50% {
-        opacity: 1;
-      }
-      100% {
-        opacity: 0;
-      }
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
     }
 }
 

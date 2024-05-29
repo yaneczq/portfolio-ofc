@@ -13,10 +13,10 @@ const Home = () => {
     <div className="container">
 
         <div className="left-section">
-          <Navbar></Navbar>
+          {/* <Navbar></Navbar>
             <Marquee></Marquee>
             <TextBanner></TextBanner>
-            <Footer></Footer>
+            <Footer></Footer> */}
         </div>
         <div className="right-section">
             <Post></Post>

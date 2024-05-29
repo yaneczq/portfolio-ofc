@@ -1,0 +1,23 @@
+// _layout.scss
+@import "./breakpoints";
+
+.container {
+    
+  
+    @include respond-to(sm) {
+      max-width: 714px;
+    }
+  
+    @include respond-to(md) {
+      max-width: 958px;
+    }
+  
+    @include respond-to(lg) {
+      max-width: 1162px;
+    }
+  
+    @include respond-to(xl) {
+      max-width: 1924px;
+    }
+  }
+  
